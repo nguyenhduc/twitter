@@ -14,6 +14,10 @@ The page is written using Angular 9, to save some time on the UX/UI side I make 
 
 API end-points is provided at https://anymind-recruitment-python-backend.adasia.biz
 
+#### Tweak with potential bug
+
+To avoid the CORS policy, I used https://cors-anywhere.herokuapp.com
+
 ## Development server
 
 Make sure you have [Angular CLI](https://cli.angular.io/) installed.
