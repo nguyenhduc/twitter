@@ -1,0 +1,23 @@
+<table class="table" style="word-wrap: break-word;">
+  <tr>
+    <td style="width: 40%">Tweet</td>
+    <td class="text-center">Likes</td>
+    <td class="text-center">Replies</td>
+    <td class="text-center">Retweets</td>
+    <td>Hashtags</td>
+    <td>Date</td>
+  </tr>
+  <tr *ngFor="let tweet of tweets | slice: ((page-1) * pageSize):((page-1) * pageSize + pageSize)">
+    <td><p class="tweet-text">{{ tweet.text }}</p></td>
+    <td class="text-center">{{ tweet.likes || '-' }}</td>
+    <td class="text-center">{{ tweet.replies || '-' }}</td>
+    <td class="text-center">{{ tweet.retweets || '-' }}</td>
+    <td>{{ tweet.hashtags | take: 2 }}</td>
+    <td>{{ tweet.date | date: 'mediumDate' }}</td>
+  </tr>
+</table>
+<ngb-pagination
+  *ngIf="tweets.length"
+  [(page)]="page"
+  [pageSize]="pageSize"
+  [collectionSize]="tweets.length"></ngb-pagination>

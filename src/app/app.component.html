@@ -1,0 +1,27 @@
+<h4 class="container">Angular Twitter</h4>
+<div class="bg-light">
+  <div class="container">
+    <ul class="nav-tabs" ngbNav #nav="ngbNav" [(activeId)]="active" (navChange)="onChangeNav()">
+      <li [ngbNavItem]="1">
+        <a ngbNavLink>Hashtag search</a>
+        <ng-template ngbNavContent>
+          <p class="text-secondary">Hashtag search</p>
+          <app-search-input [type]="'Hashtag'" (searchInput)="search($event)"></app-search-input>
+          <ng-container *ngTemplateOutlet="tweetsTemplate"></ng-container>
+        </ng-template>
+      </li>
+      <li [ngbNavItem]="2">
+        <a ngbNavLink>User search</a>
+        <ng-template ngbNavContent>
+          <p class="text-secondary">User search</p>
+          <app-search-input [type]="'User'" (searchInput)="search($event)"></app-search-input>
+          <ng-container *ngTemplateOutlet="tweetsTemplate"></ng-container>
+        </ng-template>
+      </li>
+    </ul>
+    <div class="pt-2" [ngbNavOutlet]="nav"></div>
+  </div>
+</div>
+<ng-template #tweetsTemplate>
+  <div class="pt-4"><app-tweetlist [tweets]="tweets"></app-tweetlist></div>
+</ng-template>

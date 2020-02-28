@@ -1,27 +1,20 @@
-# Twitter
+# Twitter search
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.3.
+A simple Twitter search page written on AnyMind Group's request for interviewing.
+
+## Describes
+
+The main job will be to develop one app with two screens. Both screens will display a list of Tweets with different searching options by user or hashtag.
+
+### Techs
+
+The page is written using Angular 9, to save some time on the UX/UI side I make use of Bootstrap and Ng-Bootstrap.
+
+### APIs
+
+API end-points is provided at https://anymind-recruitment-python-backend.adasia.biz
 
 ## Development server
 
+Make sure you have [Angular CLI](https://cli.angular.io/) installed.
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
