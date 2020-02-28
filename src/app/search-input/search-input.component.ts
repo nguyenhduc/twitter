@@ -5,8 +5,7 @@ import { debounceTime } from 'rxjs/operators';
 
 @Component({
   selector: 'app-search-input',
-  templateUrl: './search-input.component.html',
-  styleUrls: ['./search-input.component.scss']
+  templateUrl: './search-input.component.html'
 })
 export class SearchInputComponent implements OnInit, OnDestroy {
   @ViewChild('inputRef', { static: true }) inputRef: ElementRef;

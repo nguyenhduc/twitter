@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TwitterService {
-  private resourceUrl = 'https://anymind-recruitment-python-backend.adasia.biz';
+  // small tweak it avoid CORS policy
+  private resourceUrl = 'https://cors-anywhere.herokuapp.com/https://anymind-recruitment-python-backend.adasia.biz';
 
   constructor(private http: HttpClient) { }
 

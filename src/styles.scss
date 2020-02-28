@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+// SHOULD BE USING ITCSS BUT QUICKIE FOR NOW
+$title-bar-height: 30px;
+
+.fixed-table {
+    table-layout: fixed;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.overflow-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.flex-start {
+    display: flex;
+}

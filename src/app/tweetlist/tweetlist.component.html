@@ -1,4 +1,4 @@
-<table class="table" style="word-wrap: break-word;">
+<table class="table fixed-table">
   <tr>
     <td style="width: 40%">Tweet</td>
     <td class="text-center">Likes</td>
@@ -12,7 +12,7 @@
     <td class="text-center">{{ tweet.likes || '-' }}</td>
     <td class="text-center">{{ tweet.replies || '-' }}</td>
     <td class="text-center">{{ tweet.retweets || '-' }}</td>
-    <td>{{ tweet.hashtags | take: 2 }}</td>
+    <td class="overflow-ellipsis">{{ tweet.hashtags | take: 2 }}</td>
     <td>{{ tweet.date | date: 'mediumDate' }}</td>
   </tr>
 </table>

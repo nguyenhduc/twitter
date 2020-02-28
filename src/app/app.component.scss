@@ -1,0 +1,9 @@
+@import '../styles';
+
+.title-bar {
+    height: $title-bar-height;
+}
+
+.default-container-height {
+    min-height: calc(100vh - #{$title-bar-height});
+}
